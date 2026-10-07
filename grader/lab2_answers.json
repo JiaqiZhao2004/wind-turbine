@@ -1,0 +1,12 @@
+{
+  "_how_to": "Fill in your answers, then run:  python3 grader/selfcheck.py",
+  "q1_trusted_flows": [
+    "FARM_IP:port -> WTG_IP:20000"
+  ],
+  "q2_hmi_credentials": "user/pass",
+  "q3_new_interaction": {
+    "what_i_did": "",
+    "flow": "A:port -> B:port"
+  },
+  "q4_modbus_vs_dnp3": ""
+}
