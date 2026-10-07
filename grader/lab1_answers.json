@@ -5,9 +5,9 @@
     "(add the other steady-state polls: yaw .101, blades .103/.104/.105)"
   ],
   "q2_new_interaction": {
-    "what_i_did": "",
-    "flow": "A:port -> B:port"
+    "what_i_did": "opening the HMI dashboard, checking the UI and logging in",
+    "flow": "10.11.12.1:58554 -> 10.11.12.100:1880"
   },
   "q3_adversary_changes": "",
-  "q4_long_windows": ""
+  "q4_long_windows": "Long snapshot windows become necessary to surface patterns of low-frequency normal traffic, which is part of normalcy. If snapshot windows are too short, they cannot distinguish low-frequency normal traffic from one-off unnormal traffic, causing misclassifications."
 }
