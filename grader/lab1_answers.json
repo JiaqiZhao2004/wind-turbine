@@ -1,13 +1,16 @@
 {
   "_how_to": "Fill in your answers, then run:  python3 grader/selfcheck.py",
   "q1_trusted_flows": [
-    "10.11.12.100:PORT -> 10.11.12.102:502",
-    "(add the other steady-state polls: yaw .101, blades .103/.104/.105)"
+    "10.11.12.100 -> 10.11.12.101:502",
+    "10.11.12.100 -> 10.11.12.102:502",
+    "10.11.12.100 -> 10.11.12.103:502",
+    "10.11.12.100 -> 10.11.12.104:502",
+    "10.11.12.100 -> 10.11.12.105:502"
   ],
   "q2_new_interaction": {
     "what_i_did": "opening the HMI dashboard, checking the UI and logging in",
     "flow": "10.11.12.1:58554 -> 10.11.12.100:1880"
   },
-  "q3_adversary_changes": "",
+  "q3_adversary_changes": "The adversary (10.11.12.200) uses ARP spoofing to launch a MitM attack between the main controller (10.11.12.100) and the anemometer (10.11.12.102). It forwards traffic to conceal its existence.",
   "q4_long_windows": "Long snapshot windows become necessary to surface patterns of low-frequency normal traffic, which is part of normalcy. If snapshot windows are too short, they cannot distinguish low-frequency normal traffic from one-off unnormal traffic, causing misclassifications."
 }
